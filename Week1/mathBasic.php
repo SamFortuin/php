@@ -10,7 +10,7 @@ $numberSub = $number1 - $number2;
 $numberDiv = $number1 / $number2;
 
 //printing to browser
-$numArr[1] = ' x '; echo implode($numArr).$numberMult.'<br>'; //Multiplication
+$numArr[1] = ' × '; echo implode($numArr).$numberMult.'<br>'; //Multiplication
 $numArr[1] = ' + '; echo implode($numArr).$numberAdd.'<br>'; //Addition
 $numArr[1] = ' - '; echo implode($numArr).$numberSub.'<br>'; //Subtraction
 $numArr[1] = ' ÷ '; echo implode($numArr).$numberDiv.'<br>'; //Division
