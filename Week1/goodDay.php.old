@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<script>
+        // var today = "Wed Jun 22 2022 14:30:23 GMT+0200 (Central European Summer Time)" //static for testing
+        var today = new Date();
+        var todayStr = String(today);
+        var displayTime = todayStr.slice(16,24);
+        var funcTime = (todayStr.slice(16,18)).valueOf();
+        console.log(funcTime);
+</script>
+<!-- first style for everything except bg -->
+<style> 
+    .centerText {
+    display: block;
+    text-align: center;
+    clear: both;
+    width: auto;
+    height: auto;
+    color: black;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 80px;
+    }
+</style>
+
+
+<?php
+    echo $displayTime = "<h1 class=centerText><script>document.write(displayTime)</script></h1>";
+    $switchTime = "<script>document.write(funcTime)</script>";
+    $imageURL = '';//"images/afternoon.png";
+?>
+
+<!-- second style exclusivly for background -->
+<style>
+        body{
+            background-image: url(<?php echo $imageURL;?>);
+        }
+</style>
